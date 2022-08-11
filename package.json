@@ -4,7 +4,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.33.0",
@@ -22,11 +23,20 @@
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "8.21.0",
     "eslint-config-next": "12.2.4",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "semantic-release": "^19.0.3"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "version": "0.0.0-development",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wojcraftinho/wojnotes.git"
+  },
+  "publishConfig": {
+    "access": "restricted"
   }
 }
