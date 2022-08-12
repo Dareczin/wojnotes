@@ -1,0 +1,15 @@
+version: 2.1
+orbs:
+  node: circleci/node@5.0.0
+jobs:
+  release:
+    executor: node/default
+    steps:
+      - checkout
+      - node/install-packages
+      - run: npx semantic-release
+
+workflows:
+  release:
+    jobs:
+      - release
